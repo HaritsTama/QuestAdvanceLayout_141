@@ -117,6 +117,26 @@ fun ActivitasPertama(modifier : Modifier) {
             }
         }
 
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp, vertical = 10.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text(
+                text = "About Me:",
+                fontSize = 24.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
+            )
+            Spacer(modifier = Modifier.width(10.dp))
+            Text(
+                text = "Lahir di Jawa Kuliah di Jawa",
+                fontSize = 18.sp,
+                color = Color.DarkGray
+            )
+        }
+
         Spacer(modifier = Modifier.height(20.dp))
 
         Box(
