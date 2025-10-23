@@ -103,7 +103,7 @@ fun ActivitasPertama(modifier : Modifier) {
                 Text(
                     text = "• Playing Games",
                     fontSize = 20.sp,
-                    color = Color.White
+                    color = Color.LightGray
                 )
                 Text(
                     text = "• Making Macro For Games",
