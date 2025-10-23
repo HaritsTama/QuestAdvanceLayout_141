@@ -85,7 +85,7 @@ fun ActivitasPertama(modifier : Modifier) {
                 .fillMaxWidth()
                 .padding(12.dp),
             colors = CardDefaults.cardColors(
-                containerColor = Color.DarkGray
+                containerColor = Color.Black
             )
         ) {
             Column(
@@ -122,7 +122,7 @@ fun ActivitasPertama(modifier : Modifier) {
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(horizontal = 16.dp, vertical = 10.dp),
-            horizontalArrangement = Arrangement.SpaceEvenly, // space between boxes
+            horizontalArrangement = Arrangement.SpaceEvenly,
             verticalAlignment = Alignment.Top
         ) {
             // About Me Box
