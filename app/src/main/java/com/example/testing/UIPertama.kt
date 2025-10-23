@@ -137,6 +137,21 @@ fun ActivitasPertama(modifier : Modifier) {
             )
         }
 
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text(
+                text = "Fun Fact:",
+                fontSize = 24.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Red
+            )
+            Spacer(modifier = Modifier.width(10.dp))
+            Text(
+                text = "Aku Belajar Inggris Secara Otodidak",
+                fontSize = 18.sp,
+                color = Color.DarkGray
+            )
+        }
+
         Spacer(modifier = Modifier.height(20.dp))
 
         Box(
