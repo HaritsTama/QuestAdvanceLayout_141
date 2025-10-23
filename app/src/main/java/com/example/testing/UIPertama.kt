@@ -168,7 +168,7 @@ fun ActivitasPertama(modifier : Modifier) {
                         text = "Fun Fact:",
                         fontSize = 24.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Color.Red
+                        color = Color.Black
                     )
                     Spacer(modifier = Modifier.height(8.dp))
                     Text(
