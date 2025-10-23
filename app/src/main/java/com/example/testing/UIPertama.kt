@@ -48,7 +48,7 @@ fun ActivitasPertama(modifier : Modifier) {
                 .fillMaxWidth(1f)
                 .padding(12.dp),
             colors = CardDefaults.cardColors(
-                containerColor = Color.DarkGray
+                containerColor = Color.Black
             )
         ){
             Row() {
@@ -72,7 +72,7 @@ fun ActivitasPertama(modifier : Modifier) {
                     Text(
                         stringResource(R.string.alamat),
                         fontSize = 20.sp,
-                        color = Color.Cyan,
+                        color = Color.Red,
                         modifier = Modifier.padding(top = 10.dp)
                     )
                 }
