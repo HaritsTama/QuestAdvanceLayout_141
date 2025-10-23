@@ -104,6 +104,16 @@ fun ActivitasPertama(modifier : Modifier) {
                     fontSize = 20.sp,
                     color = Color.White
                 )
+                Text(
+                    text = "• Making Macro For Games",
+                    fontSize = 20.sp,
+                    color = Color.White
+                )
+                Text(
+                    text = "• Insomnia",
+                    fontSize = 20.sp,
+                    color = Color.White
+                )
             }
         }
 
