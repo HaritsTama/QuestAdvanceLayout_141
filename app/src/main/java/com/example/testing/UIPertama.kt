@@ -118,45 +118,6 @@ fun ActivitasPertama(modifier : Modifier) {
             }
         }
 
-        Card(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(12.dp),
-            colors = CardDefaults.cardColors(
-                containerColor = Color.DarkGray
-            )
-        ) {
-            Column(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(16.dp)
-            ) {
-                Text(
-                    text = "My Hobbies",
-                    fontSize = 28.sp,
-                    fontWeight = FontWeight.Bold,
-                    color = Color.Blue
-                )
-                Spacer(modifier = Modifier.height(10.dp))
-                Text(
-                    text = "• Playing Games",
-                    fontSize = 20.sp,
-                    color = Color.White
-                )
-                Text(
-                    text = "• Making Macro For Games",
-                    fontSize = 20.sp,
-                    color = Color.White
-                )
-                Text(
-                    text = "• Insomnia",
-                    fontSize = 20.sp,
-                    color = Color.White
-                )
-            }
-        }
-
-        // 🔽🔽🔽 ABOUT ME + FUN FACT SIDE BY SIDE 🔽🔽🔽
         Row(
             modifier = Modifier
                 .fillMaxWidth()
