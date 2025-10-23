@@ -1,6 +1,7 @@
 package com.example.testing
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -117,39 +118,105 @@ fun ActivitasPertama(modifier : Modifier) {
             }
         }
 
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.DarkGray
+            )
+        ) {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp)
+            ) {
+                Text(
+                    text = "My Hobbies",
+                    fontSize = 28.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Blue
+                )
+                Spacer(modifier = Modifier.height(10.dp))
+                Text(
+                    text = "• Playing Games",
+                    fontSize = 20.sp,
+                    color = Color.White
+                )
+                Text(
+                    text = "• Making Macro For Games",
+                    fontSize = 20.sp,
+                    color = Color.White
+                )
+                Text(
+                    text = "• Insomnia",
+                    fontSize = 20.sp,
+                    color = Color.White
+                )
+            }
+        }
+
+        // 🔽🔽🔽 ABOUT ME + FUN FACT SIDE BY SIDE 🔽🔽🔽
         Row(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(horizontal = 16.dp, vertical = 10.dp),
-            verticalAlignment = Alignment.CenterVertically
+            horizontalArrangement = Arrangement.SpaceEvenly, // space between boxes
+            verticalAlignment = Alignment.Top
         ) {
-            Text(
-                text = "About Me:",
-                fontSize = 24.sp,
-                fontWeight = FontWeight.Bold,
-                color = Color.Black
-            )
-            Spacer(modifier = Modifier.width(10.dp))
-            Text(
-                text = "Lahir di Jawa Kuliah di Jawa",
-                fontSize = 18.sp,
-                color = Color.DarkGray
-            )
-        }
+            // About Me Box
+            Card(
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(end = 8.dp),
+                colors = CardDefaults.cardColors(containerColor = Color(0xFFE3F2FD))
+            ) {
+                Column(
+                    modifier = Modifier
+                        .padding(16.dp)
+                        .fillMaxWidth()
+                ) {
+                    Text(
+                        text = "About Me:",
+                        fontSize = 24.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.Black
+                    )
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Text(
+                        text = "Lahir di Jawa, Kuliah di Jawa",
+                        fontSize = 18.sp,
+                        color = Color.DarkGray
+                    )
+                }
+            }
 
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            Text(
-                text = "Fun Fact:",
-                fontSize = 24.sp,
-                fontWeight = FontWeight.Bold,
-                color = Color.Red
-            )
-            Spacer(modifier = Modifier.width(10.dp))
-            Text(
-                text = "Aku Belajar Inggris Secara Otodidak",
-                fontSize = 18.sp,
-                color = Color.DarkGray
-            )
+            // Fun Fact Box
+            Card(
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(start = 8.dp),
+                colors = CardDefaults.cardColors(containerColor = Color(0xFFFFEBEE))
+            ) {
+                Column(
+                    modifier = Modifier
+                        .padding(16.dp)
+                        .fillMaxWidth()
+                ) {
+                    Text(
+                        text = "Fun Fact:",
+                        fontSize = 24.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.Red
+                    )
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Text(
+                        text = "Aku Belajar Inggris Secara Otodidak",
+                        fontSize = 18.sp,
+                        color = Color.DarkGray
+                    )
+                }
+            }
         }
 
         Spacer(modifier = Modifier.height(20.dp))
