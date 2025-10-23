@@ -157,7 +157,7 @@ fun ActivitasPertama(modifier : Modifier) {
                 modifier = Modifier
                     .weight(1f)
                     .padding(start = 8.dp),
-                colors = CardDefaults.cardColors(containerColor = Color(0xFFFFEBEE))
+                colors = CardDefaults.cardColors(containerColor = Color(0xFFE3F2FD))
             ) {
                 Column(
                     modifier = Modifier
