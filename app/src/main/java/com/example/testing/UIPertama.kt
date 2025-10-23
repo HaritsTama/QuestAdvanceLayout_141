@@ -181,6 +181,16 @@ fun ActivitasPertama(modifier : Modifier) {
         }
 
         Spacer(modifier = Modifier.height(20.dp))
+        val gambarUmy = painterResource(R.drawable.umy)
+        Image(
+            painter = gambarUmy,
+            contentDescription = "Logo Kebangaan",
+            modifier = Modifier
+                .size(150.dp)
+                .padding(8.dp)
+        )
+
+        Spacer(modifier = Modifier.height(20.dp))
 
         Box(
             modifier = Modifier
