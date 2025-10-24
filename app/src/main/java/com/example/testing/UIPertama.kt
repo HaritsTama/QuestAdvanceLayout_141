@@ -52,7 +52,7 @@ fun ActivitasPertama(modifier : Modifier) {
                 containerColor = Color.DarkGray
             )
         ){
-            Row() {
+            Row(verticalAlignment = Alignment.CenterVertically) {
                 val gambar = painterResource(R.drawable.logotupai)
                 Image(
                     painter = gambar,
