@@ -1,7 +1,6 @@
 package com.example.testing
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -145,8 +144,7 @@ fun ActivitasPertama(modifier : Modifier) {
                         stringResource(R.string.nama2),
                         fontSize = 30.sp,
                         fontFamily = FontFamily.Cursive,
-                        color = Color.White,
-                        modifier = Modifier.padding(top = 15.dp)
+                        color = Color.White
                     )
                     Text(
                         stringResource(R.string.nim),
