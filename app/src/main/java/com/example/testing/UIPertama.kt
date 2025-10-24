@@ -58,7 +58,7 @@ fun ActivitasPertama(modifier : Modifier) {
                     painter = gambar,
                     contentDescription = null,
                     modifier = Modifier
-                        .size(100.dp)
+                        .size(170.dp)
                         .padding(5.dp)
                 )
                 Spacer(modifier = Modifier.width(30.dp))
@@ -80,115 +80,79 @@ fun ActivitasPertama(modifier : Modifier) {
             }
         }
 
+        Spacer(modifier = Modifier.height(5.dp))
         Card(
             modifier = Modifier
-                .fillMaxWidth()
+                .fillMaxWidth(1f)
                 .padding(12.dp),
             colors = CardDefaults.cardColors(
                 containerColor = Color.Black
             )
-        ) {
-            Column(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(16.dp)
-            ) {
-                Text(
-                    text = "My Hobbies",
-                    fontSize = 28.sp,
-                    fontWeight = FontWeight.Bold,
-                    color = Color.Blue
-                )
-                Spacer(modifier = Modifier.height(10.dp))
-                Text(
-                    text = "• Playing Games",
-                    fontSize = 20.sp,
-                    color = Color.LightGray
-                )
-                Text(
-                    text = "• Making Macro For Games",
-                    fontSize = 20.sp,
-                    color = Color.White
-                )
-                Text(
-                    text = "• Insomnia",
-                    fontSize = 20.sp,
-                    color = Color.White
-                )
-            }
-        }
-
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(horizontal = 16.dp, vertical = 10.dp),
-            horizontalArrangement = Arrangement.SpaceEvenly,
-            verticalAlignment = Alignment.Top
-        ) {
-            // About Me Box
-            Card(
-                modifier = Modifier
-                    .weight(1f)
-                    .padding(end = 8.dp),
-                colors = CardDefaults.cardColors(containerColor = Color(0xFFE3F2FD))
-            ) {
-                Column(
+        ){
+            Row() {
+                val gambar = painterResource(R.drawable.logotupai)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
                     modifier = Modifier
-                        .padding(16.dp)
-                        .fillMaxWidth()
-                ) {
+                        .size(170.dp)
+                        .padding(5.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column() {
                     Text(
-                        text = "About Me:",
-                        fontSize = 24.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = Color.Black
+                        stringResource(R.string.nama),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 15.dp)
                     )
-                    Spacer(modifier = Modifier.height(8.dp))
                     Text(
-                        text = "Lahir di Jawa, Kuliah di Jawa",
-                        fontSize = 18.sp,
-                        color = Color.DarkGray
-                    )
-                }
-            }
-
-            // Fun Fact Box
-            Card(
-                modifier = Modifier
-                    .weight(1f)
-                    .padding(start = 8.dp),
-                colors = CardDefaults.cardColors(containerColor = Color(0xFFE3F2FD))
-            ) {
-                Column(
-                    modifier = Modifier
-                        .padding(16.dp)
-                        .fillMaxWidth()
-                ) {
-                    Text(
-                        text = "Fun Fact:",
-                        fontSize = 24.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = Color.Black
-                    )
-                    Spacer(modifier = Modifier.height(8.dp))
-                    Text(
-                        text = "Aku Belajar Inggris Secara Otodidak",
-                        fontSize = 18.sp,
-                        color = Color.DarkGray
+                        stringResource(R.string.alamat),
+                        fontSize = 20.sp,
+                        color = Color.Red,
+                        modifier = Modifier.padding(top = 10.dp)
                     )
                 }
             }
         }
 
-        Spacer(modifier = Modifier.height(20.dp))
-        val gambarUmy = painterResource(R.drawable.umy)
-        Image(
-            painter = gambarUmy,
-            contentDescription = "Logo Kebangaan",
+        Spacer(modifier = Modifier.height(5.dp))
+        Card(
             modifier = Modifier
-                .size(150.dp)
-                .padding(8.dp)
-        )
+                .fillMaxWidth(1f)
+                .padding(12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Black
+            )
+        ){
+            Row() {
+                val gambar = painterResource(R.drawable.logotupai)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(170.dp)
+                        .padding(5.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column() {
+                    Text(
+                        stringResource(R.string.nama),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 15.dp)
+                    )
+                    Text(
+                        stringResource(R.string.alamat),
+                        fontSize = 20.sp,
+                        color = Color.Red,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                }
+            }
+        }
 
         Spacer(modifier = Modifier.height(20.dp))
 
